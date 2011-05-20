@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		873ED2A01386550500BC90DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873ED29F1386550500BC90DE /* UIKit.framework */; };
+		873ED2A21386550500BC90DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873ED2A11386550500BC90DE /* Foundation.framework */; };
+		873ED2A41386550500BC90DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873ED2A31386550500BC90DE /* CoreGraphics.framework */; };
+		873ED2AA1386550500BC90DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 873ED2A81386550500BC90DE /* InfoPlist.strings */; };
+		873ED2AD1386550500BC90DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 873ED2AC1386550500BC90DE /* main.m */; };
+		873ED2B01386550500BC90DE /* GodrayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 873ED2AF1386550500BC90DE /* GodrayAppDelegate.m */; };
+		873ED2B31386550500BC90DE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873ED2B11386550500BC90DE /* MainWindow.xib */; };
+		873ED2B61386550600BC90DE /* GodrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873ED2B51386550600BC90DE /* GodrayViewController.m */; };
+		873ED2B91386550600BC90DE /* GodrayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873ED2B71386550600BC90DE /* GodrayViewController.xib */; };
+		873ED2C813866DC000BC90DE /* god_ray.png in Resources */ = {isa = PBXBuildFile; fileRef = 873ED2C413866DC000BC90DE /* god_ray.png */; };
+		873ED2C913866DC000BC90DE /* god_ray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 873ED2C513866DC000BC90DE /* god_ray@2x.png */; };
+		873ED2CA13866DC000BC90DE /* Package.png in Resources */ = {isa = PBXBuildFile; fileRef = 873ED2C613866DC000BC90DE /* Package.png */; };
+		873ED2CB13866DC000BC90DE /* Package@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 873ED2C713866DC000BC90DE /* Package@2x.png */; };
+		87ADDB291386769500B72182 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87ADDB281386769500B72182 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		873ED29B1386550500BC90DE /* Godray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Godray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		873ED29F1386550500BC90DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		873ED2A11386550500BC90DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		873ED2A31386550500BC90DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		873ED2A71386550500BC90DE /* Godray-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Godray-Info.plist"; sourceTree = "<group>"; };
+		873ED2A91386550500BC90DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		873ED2AB1386550500BC90DE /* Godray-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Godray-Prefix.pch"; sourceTree = "<group>"; };
+		873ED2AC1386550500BC90DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		873ED2AE1386550500BC90DE /* GodrayAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GodrayAppDelegate.h; sourceTree = "<group>"; };
+		873ED2AF1386550500BC90DE /* GodrayAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GodrayAppDelegate.m; sourceTree = "<group>"; };
+		873ED2B21386550500BC90DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		873ED2B41386550600BC90DE /* GodrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GodrayViewController.h; sourceTree = "<group>"; };
+		873ED2B51386550600BC90DE /* GodrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GodrayViewController.m; sourceTree = "<group>"; };
+		873ED2B81386550600BC90DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GodrayViewController.xib; sourceTree = "<group>"; };
+		873ED2C413866DC000BC90DE /* god_ray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = god_ray.png; sourceTree = "<group>"; };
+		873ED2C513866DC000BC90DE /* god_ray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "god_ray@2x.png"; sourceTree = "<group>"; };
+		873ED2C613866DC000BC90DE /* Package.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Package.png; sourceTree = "<group>"; };
+		873ED2C713866DC000BC90DE /* Package@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Package@2x.png"; sourceTree = "<group>"; };
+		87ADDB281386769500B72182 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		873ED2981386550500BC90DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87ADDB291386769500B72182 /* QuartzCore.framework in Frameworks */,
+				873ED2A01386550500BC90DE /* UIKit.framework in Frameworks */,
+				873ED2A21386550500BC90DE /* Foundation.framework in Frameworks */,
+				873ED2A41386550500BC90DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		873ED2901386550500BC90DE = {
+			isa = PBXGroup;
+			children = (
+				87ADDB281386769500B72182 /* QuartzCore.framework */,
+				873ED2A51386550500BC90DE /* Godray */,
+				873ED29E1386550500BC90DE /* Frameworks */,
+				873ED29C1386550500BC90DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		873ED29C1386550500BC90DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				873ED29B1386550500BC90DE /* Godray.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		873ED29E1386550500BC90DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				873ED29F1386550500BC90DE /* UIKit.framework */,
+				873ED2A11386550500BC90DE /* Foundation.framework */,
+				873ED2A31386550500BC90DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		873ED2A51386550500BC90DE /* Godray */ = {
+			isa = PBXGroup;
+			children = (
+				873ED2C313866D0900BC90DE /* Resources */,
+				873ED2AE1386550500BC90DE /* GodrayAppDelegate.h */,
+				873ED2AF1386550500BC90DE /* GodrayAppDelegate.m */,
+				873ED2B11386550500BC90DE /* MainWindow.xib */,
+				873ED2B41386550600BC90DE /* GodrayViewController.h */,
+				873ED2B51386550600BC90DE /* GodrayViewController.m */,
+				873ED2B71386550600BC90DE /* GodrayViewController.xib */,
+				873ED2A61386550500BC90DE /* Supporting Files */,
+			);
+			path = Godray;
+			sourceTree = "<group>";
+		};
+		873ED2A61386550500BC90DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				873ED2A71386550500BC90DE /* Godray-Info.plist */,
+				873ED2A81386550500BC90DE /* InfoPlist.strings */,
+				873ED2AB1386550500BC90DE /* Godray-Prefix.pch */,
+				873ED2AC1386550500BC90DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		873ED2C313866D0900BC90DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				873ED2C413866DC000BC90DE /* god_ray.png */,
+				873ED2C513866DC000BC90DE /* god_ray@2x.png */,
+				873ED2C613866DC000BC90DE /* Package.png */,
+				873ED2C713866DC000BC90DE /* Package@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		873ED29A1386550500BC90DE /* Godray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 873ED2BC1386550600BC90DE /* Build configuration list for PBXNativeTarget "Godray" */;
+			buildPhases = (
+				873ED2971386550500BC90DE /* Sources */,
+				873ED2981386550500BC90DE /* Frameworks */,
+				873ED2991386550500BC90DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Godray;
+			productName = Godray;
+			productReference = 873ED29B1386550500BC90DE /* Godray.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		873ED2921386550500BC90DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "いります電算企画";
+			};
+			buildConfigurationList = 873ED2951386550500BC90DE /* Build configuration list for PBXProject "Godray" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 873ED2901386550500BC90DE;
+			productRefGroup = 873ED29C1386550500BC90DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				873ED29A1386550500BC90DE /* Godray */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		873ED2991386550500BC90DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873ED2AA1386550500BC90DE /* InfoPlist.strings in Resources */,
+				873ED2B31386550500BC90DE /* MainWindow.xib in Resources */,
+				873ED2B91386550600BC90DE /* GodrayViewController.xib in Resources */,
+				873ED2C813866DC000BC90DE /* god_ray.png in Resources */,
+				873ED2C913866DC000BC90DE /* god_ray@2x.png in Resources */,
+				873ED2CA13866DC000BC90DE /* Package.png in Resources */,
+				873ED2CB13866DC000BC90DE /* Package@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		873ED2971386550500BC90DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873ED2AD1386550500BC90DE /* main.m in Sources */,
+				873ED2B01386550500BC90DE /* GodrayAppDelegate.m in Sources */,
+				873ED2B61386550600BC90DE /* GodrayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		873ED2A81386550500BC90DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				873ED2A91386550500BC90DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		873ED2B11386550500BC90DE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				873ED2B21386550500BC90DE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		873ED2B71386550600BC90DE /* GodrayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				873ED2B81386550600BC90DE /* en */,
+			);
+			name = GodrayViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		873ED2BA1386550600BC90DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		873ED2BB1386550600BC90DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		873ED2BD1386550600BC90DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Godray/Godray-Prefix.pch";
+				INFOPLIST_FILE = "Godray/Godray-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		873ED2BE1386550600BC90DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Godray/Godray-Prefix.pch";
+				INFOPLIST_FILE = "Godray/Godray-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		873ED2951386550500BC90DE /* Build configuration list for PBXProject "Godray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873ED2BA1386550600BC90DE /* Debug */,
+				873ED2BB1386550600BC90DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		873ED2BC1386550600BC90DE /* Build configuration list for PBXNativeTarget "Godray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873ED2BD1386550600BC90DE /* Debug */,
+				873ED2BE1386550600BC90DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 873ED2921386550500BC90DE /* Project object */;
+}
