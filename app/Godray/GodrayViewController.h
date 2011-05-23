@@ -19,6 +19,4 @@
 
 - (IBAction) firedStart:(id)sender;
 
-- (void) startGodrayAnimation;
-
 @end
