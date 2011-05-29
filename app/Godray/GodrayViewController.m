@@ -47,7 +47,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
 	packageLayer_.position = CGPointMake(layersize.width * 0.5f , layersize.height * 0.5f );
 	packageLayer_.contents = (id)[packageImageGodRay CGImage];
     
-    // 利用済みが贈リソースを削除
+    // 利用済み画像リソースを削除
 	[packageDataGodRay release];
 	[packageImageGodRay release];
     
