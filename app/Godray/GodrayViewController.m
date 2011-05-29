@@ -55,9 +55,6 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
         // CALayer のインスタンスをsublayer として追加
     
     // ここからアニメーションを登録
-    [CATransaction begin];
-    [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions]; // 暗黙のアニメーションを無効化
-
     // 紙箱をpopup する
     CABasicAnimation* popupAnimation = [[CABasicAnimation alloc] init];
     popupAnimation.keyPath = @"position.y";
@@ -73,9 +70,6 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
     [packageLayer_ addAnimation:popupAnimation forKey:@"popupPackageAnimation"]; // アニメーションをキー名@"popupPackageAnimation" として追加
     
     [popupAnimation release]; // 追加済みアニメーションを解放
-    
-    [CATransaction commit]; // CATransaction begin から始めたアニメーション登録をcommit する
-    
 }
 
 - (void) animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
@@ -83,7 +77,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
     NSString* godrayAnimatinoType = [anim valueForKey:kGodrayAnimatinoType];
         // 識別用の値をキー値kGodrayAnimatinoTypeを指定して取り出す
     
-    if( godrayAnimatinoType != nil && [godrayAnimatinoType compare:kGodrayAnimatinoTypePopupPackage] == NSOrderedSame ){
+    if( flag == YES && godrayAnimatinoType != nil && [godrayAnimatinoType compare:kGodrayAnimatinoTypePopupPackage] == NSOrderedSame ){
         [packageLayer_ removeAllAnimations]; // 全てのアニメーションを削除
         
         // 既存のレイヤーを削除する
@@ -110,6 +104,8 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
         godRayLayer_.position = CGPointMake(godraysize.width * 0.5f ,godraysize.height * 0.5f ); // 位置は挿入先の中央
         godRayLayer_.hidden = YES; // 最初は非表示
         godRayLayer_.contents = (id)[godrayImageGodRay CGImage]; // contents を設定
+        godRayLayer_.hidden = NO; // 最初は非表示
+        godRayLayer_.opacity = 0.0f; // 不透明度0
         
         // 必要なくなったイメージリソースは削除
         [godrayDataGodRay release];
@@ -117,19 +113,6 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
         
         [self.godrayView.layer addSublayer:godRayLayer_];
             // レイヤーに追加する
-        
-        // アニメーション追加
-        // CATransaction、CALayerに組み込み済みアニメーションを無効
-        [CATransaction begin];
-        [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions]; // 暗黙のアニメーションを無効化
-        godRayLayer_.hidden = NO; // 最初は非表示
-        godRayLayer_.opacity = 0.0f; // 不透明度0
-        [CATransaction commit];
-        
-        [CATransaction flush]; // ここまでのアニメーションを即反映する場合に呼び出し
-        
-        [CATransaction begin];
-        [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions]; // 暗黙のアニメーションを無効化
         
         CABasicAnimation* fadeinAnimation = [[CABasicAnimation alloc] init]; // アニメーションのインスタンスを作成
         fadeinAnimation.keyPath = @"opacity"; // 不透過率
@@ -151,9 +134,8 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
         [godRayLayer_ addAnimation:rotationAnimation forKey:@"godRayRotation"]; // アニメーションをキー@"godRayRotation" で追加
         
         [rotationAnimation release]; // 追加終了したアニメーションを削除
-            
-        [CATransaction commit]; // CATransaction begin からから始めたアニメーション処理を commit する
     }
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
