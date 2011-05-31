@@ -16,8 +16,8 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
 @synthesize godrayView=_godrayView;
 @synthesize packageView=_packageView;
 
-#define kGodrayAnimatinoType @"kGodrayAnimatinoType"
-#define kGodrayAnimatinoTypePopupPackage @"kGodrayAnimatinoTypePopupPackage"
+#define kGodrayAnimType @"kGodrayAnimType"
+#define kGodrayAnimTypePackage @"kGodrayAnimTypePackage"
 #define PACKAGE_POPUP_LENGTH 500.0f
 
 - (IBAction) firedStart:(id)sender
@@ -65,7 +65,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
     
     // delegate を登録。NSObject の派生クラスはアニメーションのdelegate として登録可能
     popupAnimation.delegate = self;
-    [popupAnimation setValue:kGodrayAnimatinoTypePopupPackage forKey:kGodrayAnimatinoType]; // 独自の値をCALayer のインスタンスに格納
+    [popupAnimation setValue:kGodrayAnimTypePackage forKey:kGodrayAnimType]; // 独自の値をCALayer のインスタンスに格納
     
     [packageLayer_ addAnimation:popupAnimation forKey:@"popupPackageAnimation"]; // アニメーションをキー名@"popupPackageAnimation" として追加
     
@@ -74,10 +74,10 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180.0f / M_PI;};
 
 - (void) animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    NSString* godrayAnimatinoType = [anim valueForKey:kGodrayAnimatinoType];
-        // 識別用の値をキー値kGodrayAnimatinoTypeを指定して取り出す
+    NSString* godrayAnimatinoType = [anim valueForKey:kGodrayAnimType];
+        // 識別用の値をキー値kGodrayAnimTypeを指定して取り出す
     
-    if( flag == YES && godrayAnimatinoType != nil && [godrayAnimatinoType compare:kGodrayAnimatinoTypePopupPackage] == NSOrderedSame ){
+    if( flag == YES && godrayAnimatinoType != nil && [godrayAnimatinoType compare:kGodrayAnimTypePackage] == NSOrderedSame ){
         [packageLayer_ removeAllAnimations]; // 全てのアニメーションを削除
         
         // 既存のレイヤーを削除する
